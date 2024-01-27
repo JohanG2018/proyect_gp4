@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="gripper_2f" default="true"/>
+  <param name="robot_description" command="$(find xacro)/xacro '$(find gp4_gazebo)/urdf/gp4_main.xacro'
+  gripper_2f:=$(arg gripper_2f)"/>
+  
+</launch>

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+  
+  <include file="$(find gp4_gazebo)/launch/gp4_gazebo.launch"/>
+  <include file="$(find gp4_moveit)/launch/move_group.launch"/>
+  
+</launch>

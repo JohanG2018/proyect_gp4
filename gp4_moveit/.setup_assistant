@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: gp4_gazebo
+    relative_path: urdf/gp4_main.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/gp4_main.srdf
+  CONFIG:
+    author_name: JohanGutierrez
+    author_email: johrguti@espol.edu.ec
+    generated_timestamp: 1705981756

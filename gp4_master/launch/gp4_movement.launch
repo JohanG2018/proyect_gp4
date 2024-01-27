@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+  
+  <node name="motion_plan" pkg="gp4_master" type="motion_plan.py" output="screen" launch-prefix="xterm -e"/>
+  <node name="current_color" pkg="gp4_master" type="color_sensor.py" output="screen" launch-prefix="xterm -e"/>
+</launch>

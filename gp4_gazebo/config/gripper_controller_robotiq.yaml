@@ -1,0 +1,4 @@
+gripper:
+  type: "position_controllers/GripperActionController"
+  joint: finger_joint
+  

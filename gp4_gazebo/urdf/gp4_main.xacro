@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<robot name="gp4_main" xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:arg name="gripper_2f" default="true"/>
+
+  <xacro:include filename="$(find gp4_gazebo)/urdf/gazebo.xacro"/>
+  
+  <xacro:include filename="$(find gp4_gazebo)/urdf/belt.xacro"/>
+  
+  <xacro:include filename="$(find gp4_gazebo)/urdf/camera.xacro"/>
+  
+
+  <!-- gripper -->
+  <xacro:if value="$(arg gripper_2f)">
+    <xacro:include filename="$(find gp4_gazebo)/urdf/gazebo_2f.xacro"/>
+  </xacro:if>
+
+
+
+</robot>

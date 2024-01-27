@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="sdf_model" default="$(find gp4_master)/models/cylinder/model.sdf"/>
+  <arg name="x" default="0.105"/>
+  <arg name="y" default="-0.47"/>
+  <arg name="z" default="0.65"/>
+  <arg name="roll" default="0.0"/>
+  <arg name="pith" default="0.0"/>
+  <arg name="yaw" default="0.0"/>
+  <node name="cilinder_spawn" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+  args="-file $(arg sdf_model) -sdf -x $(arg x) -y $(arg y) -z $(arg z) -R $(arg roll) -P $(arg pith) -Y $(arg yaw) -model cylinder"/>
+  
+</launch>
